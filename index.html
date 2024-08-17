@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./src/image/bloquear.svg">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> 
+    <title>Encriptador de Texto</title>
+
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">
+                <a href="https://www.aluracursos.com/" target="_blank"> 
+                    <img class="logo" src="./src/image/alura.svg">
+                </a>
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Ingrese texto aquí ..." autofocus></textarea>
+                <div class="content_botones">
+                    <span class="info">
+                        <img src="./src/image/!.svg" alt="advertencia" />
+                        Solo letras minúsculas y sin acentos
+                    </span>
+                    <div class="botones">
+                        <button id="button__encriptar" class="button__encriptar">Encriptar</button>
+                        <button id="button__desencriptar" class="button__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="munheco" class="munheco" src="./src/image/munheco.svg" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="textoFinal" class="textoFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textoInfo" class="info">Ingresa el texto que desea encriptar o desencriptar.</p>
+                <button class="button__copiar bn_ocultar" id="button__copiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer ">
+        <p class="creador" >&copy; Encriptador y desencriptador de Texto desarrollado por 
+            <a href="https://github.com/johtorresb/" target="_blank" class="usuario">
+                Johan Herley Torres
+            </a>
+        </p>
+        <div>
+            <a href="https://github.com/johtorresb" target="_blank">
+                <img class="links" src="./src/image/github.svg" />
+            </a>
+            
+            <a href="https://www.linkedin.com/in/johan-torres-briceño/" target="_blank">
+                <img class="links" src="./src/image/linkedin.svg" />
+            </a>
+        </div>
+    </footer>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
